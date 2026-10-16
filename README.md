@@ -1,6 +1,6 @@
 # Python UBA y ejercicios históricos de Drive
 
-Esta selección reúne código, no material nominal de evaluación. `src/uba/` conserva las copias históricas de las guías 6–8; `reparaciones/` contiene las variantes ya corregidas sin reemplazar los originales; `src/drive-2020/` contiene los 15 scripts de práctica recuperados de `Ejercicios.Python`.
+Esta selección reúne código, no material nominal de evaluación. `src/uba/` conserva las copias históricas de las guías 6–8 y `reparaciones/` contiene las variantes ya corregidas sin reemplazar los originales. Los 15 scripts de práctica recuperados de `Ejercicios.Python` permanecen en el archivo privado hasta resolver expresamente su publicación.
 
 La teoría, consignas, tests y variantes completas permanecen en el archivo de la cursada. `docs/` contiene índices y análisis para reconstruir la relación curso → tema → ejercicio. Antes de publicar se revisará la licencia de PDFs y se excluirán DNI, reportes privados, planillas y soluciones docentes.
 
@@ -10,12 +10,11 @@ Estado: selección curada en la rama `codex/uba-python-curation`. Se publican fu
 
 - `src/uba/`: copias históricas de las guías 6–8.
 - `reparaciones/`: versiones corregidas de Guía 7 y Guía 8, con sus pruebas.
-- `src/drive-2020/`: ejercicios Python recuperados de Drive, conservados como colección histórica.
 - `docs/`: procedencia, análisis y relación entre teoría y ejercicios.
 
 ## Validación local
 
-Con Python 3.12 se verificó la sintaxis de los 22 archivos incluidos. Las reparaciones tienen pruebas separadas: Guía 7 (45 pruebas al incluir regresión e históricos; 23 de regresión) y Guía 8 (9 pruebas), todas aprobadas en la selección local. Los ejercicios históricos de Drive no se presentan como una aplicación única.
+Con Python 3.12 se verificó la sintaxis de los 13 archivos incluidos. Las reparaciones tienen pruebas separadas: Guía 7 (45 pruebas al incluir regresión e históricos; 23 de regresión) y Guía 8 (9 pruebas), todas aprobadas en la selección local. Los ejercicios históricos de Drive no forman parte todavía de esta rama pública.
 
 Para ejecutar las pruebas desde la raíz:
 
