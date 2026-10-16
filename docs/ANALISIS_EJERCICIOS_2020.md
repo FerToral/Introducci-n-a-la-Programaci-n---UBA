@@ -36,6 +36,6 @@ La carpeta compartida [`Trabajos`](https://drive.google.com/drive/folders/1LRI5-
 2. Crear, en una etapa posterior, una copia didáctica por tema con funciones sin `input()` global y ejemplos bajo `__main__`.
 3. No eliminar las redefiniciones: documentar cuál era la versión de cada clase y comparar antes de elegir una solución.
 4. Vincular cada copia reparada con el PDF `P1/P2/P3` que corresponda.
-5. Publicar únicamente una selección propia y reescrita, con procedencia; no subir material docente ni copias de alumnos como si fueran proyectos propios.
+5. Esta selección histórica de 15 scripts se publica con procedencia porque fue autorizada expresamente por el titular. La etapa de reparación deberá crear copias didácticas propias y reescritas; no se debe subir material docente ni copias de alumnos como si fueran proyectos propios.
 
 Los archivos recuperados y el manifiesto están en [`../MANIFIESTO.json`](../MANIFIESTO.json). La extracción fue de solo lectura sobre Drive; no se modificó ninguna carpeta remota.

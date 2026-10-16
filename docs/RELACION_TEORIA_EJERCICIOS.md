@@ -9,4 +9,4 @@ La copia completa de la cursada está en `06-ejercicios/python/uba-introduccion-
 | Reparaciones verificadas | `reparaciones/guia-07`, `reparaciones/guia-08` | READMEs, parches y resultados de pruebas originales/reparadas |
 | Python introductorio 2020 | `src/drive-2020` | Análisis de `Ejercicios.Python` y ZIP original de Drive |
 
-La relación es intencional: los documentos docentes no se atribuyen a Fernando y sólo se incorporarán a un repositorio público si la redistribución está autorizada.
+La relación es intencional: los documentos docentes no se atribuyen a Fernando. Los 15 scripts históricos de Drive sí están en esta selección por autorización expresa; la teoría, consignas y PDFs completos permanecen fuera del repositorio público hasta revisar redistribución y licencias.
