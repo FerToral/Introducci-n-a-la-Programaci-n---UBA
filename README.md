@@ -1,31 +1,57 @@
-# Python UBA y ejercicios históricos de Drive
+# Introducción a la Programación — UBA
 
-Esta selección reúne código, no material nominal de evaluación. `src/uba/` conserva las copias históricas de las guías 6–8, `src/drive-2020/` conserva los 15 scripts históricos recuperados de `Ejercicios.Python`, y `reparaciones/` contiene las variantes ya corregidas sin reemplazar los originales. Los scripts de Drive se publican por autorización expresa y se mantienen separados por procedencia y fecha.
+Repositorio personal de la cursada de Introducción a la Programación de la UBA, segundo cuatrimestre de 2025. El contenido está organizado por cursada, guía y tipo de material; las prácticas históricas de Drive 2020 se mantienen en un bloque separado porque no pertenecen automáticamente a la cursada 2025.
 
-La teoría, consignas, tests y variantes completas permanecen en el archivo de la cursada. `docs/` contiene índices y análisis para reconstruir la relación curso → tema → ejercicio. Antes de publicar se revisará la licencia de PDFs y se excluirán DNI, reportes privados, planillas y soluciones docentes.
+## Estructura del repositorio
 
-Estado: selección curada en la rama `codex/uba-python-curation`. Se publican fuentes propias/históricas y reparaciones identificadas; no se publican PDFs, planillas, reportes nominales ni soluciones docentes.
+```text
+cursada-uba-2025-2c/
+└── guias/
+    ├── guia-06/
+    │   └── codigo/
+    ├── guia-07/
+    │   ├── codigo-historico/
+    │   ├── codigo/
+    │   └── pruebas/
+    └── guia-08/
+        ├── codigo-historico/
+        ├── codigo/
+        └── pruebas/
 
-## Estructura
+practicas-python-2020/
+├── condicionales/
+├── bucles-y-generadores/
+├── funciones/
+├── colecciones/
+└── excepciones/
 
-- `src/uba/`: copias históricas de las guías 6–8.
-- `src/drive-2020/`: ejercicios Python históricos recuperados de Drive (15 scripts), organizados por tema.
-- `reparaciones/`: versiones corregidas de Guía 7 y Guía 8, con sus pruebas.
-- `docs/`: procedencia, análisis y relación entre teoría y ejercicios.
-
-## Validación local
-
-Con Python 3.12 se verificó la sintaxis de los 28 archivos incluidos. Las reparaciones tienen pruebas separadas: Guía 7 (45 pruebas al incluir regresión e históricos; 23 de regresión) y Guía 8 (9 pruebas), todas aprobadas en la selección local. Los 15 ejercicios históricos de Drive son una colección de prácticas independientes; no se presentan como una aplicación única ni se mezclan con las reparaciones.
-
-Para ejecutar las pruebas desde la raíz:
-
-```powershell
-$env:PYTHONPATH = "reparaciones/guia-07/src"
-python -m unittest discover -s reparaciones/guia-07/tests -p "*.py"
-$env:PYTHONPATH = "reparaciones/guia-08/src"
-python -m unittest discover -s reparaciones/guia-08/tests -p "*.py"
+docs/
+├── cursada-uba-2025-2c/
+└── archivo-historico-drive.md
 ```
 
-La publicación mantiene el criterio de procedencia: la consigna oficial del campus es la autoridad para el curso 2C2025; las referencias públicas sirven sólo para contraste.
+`codigo-historico/` conserva las versiones originales de las guías 7 y 8. `codigo/` contiene la implementación que se valida con las pruebas; no se reemplazó ni se borró el material histórico.
 
-Para reparar sin subir código histórico por error, se usará como criterio adicional la [comparación de referencias públicas UBA](../../../auditoria-github-2026-10-06/REFERENCIAS_PUBLICAS_UBA_Y_CRITERIO_REPARACION_2026-10-16.md). El curso completo del campus sigue siendo la autoridad para Python 2C2025; las referencias externas sólo sirven para contraste.
+`practicas-python-2020/` es un archivo independiente de 15 ejercicios recuperados de Drive. Se publican con su procedencia y no se presentan como parte de la cursada UBA 2025 ni como una aplicación única.
+
+## Validación
+
+Con Python 3.12 se verificó la sintaxis de los 28 archivos Python. Las pruebas de la cursada ejecutan:
+
+- Guía 7: 45 pruebas aprobadas.
+- Guía 8: 9 pruebas aprobadas.
+
+Desde la raíz del repositorio:
+
+```powershell
+$env:PYTHONPATH = "cursada-uba-2025-2c/guias/guia-07/codigo"
+python -m unittest discover -s cursada-uba-2025-2c/guias/guia-07/pruebas -p "*.py"
+$env:PYTHONPATH = "cursada-uba-2025-2c/guias/guia-08/codigo"
+python -m unittest discover -s cursada-uba-2025-2c/guias/guia-08/pruebas -p "*.py"
+```
+
+Los scripts históricos pueden pedir datos por consola al ejecutarse; por eso se documentan como ejercicios y no como módulos importables.
+
+## Alcance y procedencia
+
+La relación entre teoría, guías y código está documentada en [`docs/cursada-uba-2025-2c/mapa-teoria-ejercicios.md`](docs/cursada-uba-2025-2c/mapa-teoria-ejercicios.md). Los PDFs, planillas, reportes nominales, notebooks de otros cursos y material docente completo permanecen fuera de este repositorio hasta revisar licencias y procedencia.

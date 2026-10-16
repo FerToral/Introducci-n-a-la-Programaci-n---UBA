@@ -1,6 +1,6 @@
 """Copia de tests D: una expectativa adaptada al orden estricto del PDF.
 
-El original permanece intacto en 90-variantes-historicas. En columnas,
+La variante histórica permanece intacta en `codigo-historico`. En columnas,
 [4, 8, 8] no es estrictamente creciente (guía 7, ejercicios 1.6 y 6.4).
 """
 import unittest

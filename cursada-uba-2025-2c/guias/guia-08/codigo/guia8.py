@@ -1,6 +1,6 @@
 """Copia de reparación de los ejercicios 1--18 de la Guía 8.
 
-La base histórica se conserva en ``01-python/guia-08``. Esta versión no
+La versión original se conserva en ``codigo-historico/guia8.py``. Esta versión no
 pretende resolver los ejercicios 19--27: no aparecen implementaciones
 históricas suficientes en las copias recuperadas.
 """

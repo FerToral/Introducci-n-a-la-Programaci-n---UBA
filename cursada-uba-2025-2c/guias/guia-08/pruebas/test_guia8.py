@@ -7,8 +7,8 @@ from queue import Queue as Cola
 from pathlib import Path
 
 
-SRC = Path(__file__).parents[1] / "src" / "guia8.py"
-spec = importlib.util.spec_from_file_location("guia8_reparada", SRC)
+SRC = Path(__file__).parents[1] / "codigo" / "guia8.py"
+spec = importlib.util.spec_from_file_location("guia8_validada", SRC)
 guia8 = importlib.util.module_from_spec(spec)
 assert spec.loader is not None
 spec.loader.exec_module(guia8)

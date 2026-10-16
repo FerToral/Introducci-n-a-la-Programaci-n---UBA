@@ -11,18 +11,18 @@ No es un proyecto único ni una aplicación lista para publicar. Es un historial
 | Área | Evidencia | Lectura para reparación |
 |---|---|---|
 | Condicionales | Videos 11 y 17, `if/else`, validación de notas y promedios | Ejercicios independientes; conservar las copias porque muestran distintas explicaciones y reescrituras |
-| Bucles y generadores | `PracticaBucle2.py`, `PracticasGeneradores.py` | La segunda redefine `generarPares` y `devuelve_ciudades` para mostrar dos técnicas; no debe fusionarse automáticamente |
-| Funciones | `PrimerasFunciones.py` | Archivo demostrativo con comentarios y llamadas de ejemplo |
+| Bucles y generadores | `practica-bucle-2.py`, `practicas-generadores.py` | La segunda redefine `generarPares` y `devuelve_ciudades` para mostrar dos técnicas; no debe fusionarse automáticamente |
+| Funciones | `primeras-funciones.py` | Archivo demostrativo con comentarios y llamadas de ejemplo |
 | Colecciones | listas, tuplas y diccionarios | Prácticas sueltas; requieren separar ejemplos de una solución reutilizable |
-| Excepciones | `video21/prueba_excepciones.py` | Clase demostrativa con varias versiones de `divide`, bloques comentados y un último ejemplo que pide datos por consola |
+| Excepciones | `prueba-excepciones.py` | Clase demostrativa con varias versiones de `divide`, bloques comentados y un último ejemplo que pide datos por consola |
 
 ## Diagnóstico técnico
 
 - Los 15 scripts copiados pasan análisis sintáctico con Python 3.12.14.
 - Varios ejecutan `input()` y `print()` al cargarse; no son módulos importables sin intervención.
-- `EjericiciosCondicionales-video11-3.py` redefine `MediaAritmetica` tres veces. La última versión es la que queda activa y usa el contador global `c`.
-- `PracticasGeneradores.py` redefine dos veces `generarPares` y dos veces `devuelve_ciudades`; es intencional como comparación de lista/generador y `yield`/`yield from`, pero la última definición sobrescribe la anterior.
-- `prueba_excepciones.py` mezcla versiones comentadas/documentales con una ejecución interactiva final; no debe tratarse como una biblioteca.
+- `ejercicios-condicionales-video11-3.py` redefine `MediaAritmetica` tres veces. La última versión es la que queda activa y usa el contador global `c`.
+- `practicas-generadores.py` redefine dos veces `generarPares` y dos veces `devuelve_ciudades`; es intencional como comparación de lista/generador y `yield`/`yield from`, pero la última definición sobrescribe la anterior.
+- `prueba-excepciones.py` mezcla versiones comentadas/documentales con una ejecución interactiva final; no debe tratarse como una biblioteca.
 - No se encontraron `requirements.txt`, pruebas automatizadas, configuración de proyecto ni metadatos Git en esta carpeta.
 - `PracticasBucle1` tiene cero bytes. Se registra como evidencia de un archivo creado pero sin contenido recuperable.
 
@@ -38,4 +38,4 @@ La carpeta compartida [`Trabajos`](https://drive.google.com/drive/folders/1LRI5-
 4. Vincular cada copia reparada con el PDF `P1/P2/P3` que corresponda.
 5. Esta selección histórica de 15 scripts se publica con procedencia porque fue autorizada expresamente por el titular. La etapa de reparación deberá crear copias didácticas propias y reescritas; no se debe subir material docente ni copias de alumnos como si fueran proyectos propios.
 
-Los archivos recuperados y el manifiesto están en [`../MANIFIESTO.json`](../MANIFIESTO.json). La extracción fue de solo lectura sobre Drive; no se modificó ninguna carpeta remota.
+El manifiesto completo y el ZIP original permanecen en el archivo local de rescate; este repositorio sólo contiene los 15 scripts autorizados. La extracción fue de solo lectura sobre Drive; no se modificó ninguna carpeta remota.
